@@ -1,0 +1,11 @@
+cloudOne: 
+    apiKey: 2URYArCSjaWqYCZEEP737FGRe8N
+    endpoint: https://container.us-1.cloudone.trendmicro.com
+    exclusion: 
+        namespace: [calico-system, kube-system]
+    runtimeSecurity:
+        enabled: true
+    vulnerabilityScanning:
+        enabled: true
+    inventoryCollection:
+        enabled: true
