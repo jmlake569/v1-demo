@@ -39,7 +39,8 @@ then
 else
     URL="${BASE_URL}latest/tmas-cli_$ARCHITECTURE.zip"
     curl -s "$URL" -o tmas.zip
-    unzip -p tmas.zip tmas > tmas
+    unzip -p tmas.zip tmas > extracted_tmas
+    mv extracted_tmas tmas
     chmod +x tmas
     rm -rf tmas.zip
 fi
